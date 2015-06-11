@@ -6,7 +6,7 @@ To learn more about the Billing Usage and RateCard APIs, visit [Gain insights in
 
 ## Get started
 
-To download the source code of our samples via from your favorite **git** shell or command line (ie: Git Bash, Git for Windows, etc.) just type:
+To download the source code of our samples via your favorite **git** shell or command line (ie: Git Bash, Git for Windows, etc.) just type:
 
     git clone https://github.com/Azure/BillingCodeSamples.git
     cd ./BillingCodeSamples/
