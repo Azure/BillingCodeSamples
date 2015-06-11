@@ -38,7 +38,7 @@ namespace ARMAPI_Test
                        ConfigurationManager.AppSettings["ARMBillingServiceURL"],
                        "subscriptions",
                        ConfigurationManager.AppSettings["SubscriptionID"],
-                       "providers/Microsoft.Commerce/RateCard?api-version=2015-05-15&$filter=OfferDurableId eq 'MS-AZR-0121p' and Currency eq 'USD' and Locale eq 'en-US' and RegionInfo eq 'US'");
+                       "providers/Microsoft.Commerce/RateCard?api-version=2015-06-01-preview&$filter=OfferDurableId eq 'MS-AZR-0121p' and Currency eq 'USD' and Locale eq 'en-US' and RegionInfo eq 'US'");
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestURL);
 
             // Add the OAuth Authorization header, and Content Type header
