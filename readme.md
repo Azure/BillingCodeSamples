@@ -2,7 +2,7 @@
 
 The Microsoft Azure Billing APIs enable integration of Azure Billing information into your applications, providing new insights into your consumption of Azure resources, allowing you to accurately predict and manage your Azure resource consumption costs. 
 
-To learn more about the Billing Usage and RateCard APIs, visit [Gain insights into your Microsoft Azure resource consumption](https://acom-sandbox.azurewebsites.net/documentation/articles/azure-billing-usage-rate-card-overview/?rnd=1).
+To learn more about the Billing Usage and RateCard APIs, visit [Gain insights into your Microsoft Azure resource consumption](https://azure.microsoft.com/documentation/articles/billing-usage-rate-card-overview/).
 
 ## Get started
 
