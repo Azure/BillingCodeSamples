@@ -4,10 +4,6 @@ The Microsoft Azure Billing APIs enable integration of Azure Billing information
 
 To learn more about the Billing Usage and RateCard APIs, visit [Gain insights into your Microsoft Azure resource consumption](https://acom-sandbox.azurewebsites.net/documentation/articles/azure-billing-usage-rate-card-overview/?rnd=1).
 
-## Sample Index
--	[ConsoleApp-Billing-Usage](./ConsoleApp-Billing-Usage) - This sample will help you get started with using the Usage API.
--	[ConsoleApp-Billing-RateCard](./ConsoleApp-Billing-RateCard) - This sample help you get started with using the RateCard API.
-
 ## Get started
 
 To download the source code of our samples via **git** just type:
@@ -16,6 +12,11 @@ To download the source code of our samples via **git** just type:
     cd ./BillingCodeSamples/
 
 Before you attempt to run the samples, please be sure to follow the instructions in the associated readme.md files for each, as they contain instructions for completing the requisite Azure Active Directory app registration work.
+
+## Sample Index
+
+-	[ConsoleApp-Billing-Usage](./ConsoleApp-Billing-Usage) - This sample will help you get started with using the Usage API.
+-	[ConsoleApp-Billing-RateCard](./ConsoleApp-Billing-RateCard) - This sample help you get started with using the RateCard API.
 
 ## Need Help?
 
