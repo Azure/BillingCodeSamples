@@ -1,8 +1,8 @@
-# ConsoleApp-Billing-RateCard
+# ConsoleApp-Billing-Usage
 ---------------------------
-This is a simple console app that calls the Azure Billing RateCard REST API to retrieve the list of resources per Azure offer in a given subscription, along with the pricing details for each resource. The app first fetches an access token using credentials of the signed-in user, then gets the RateCard response and deserializes it and prints it to the console.  
+This is a simple console app that calls the Azure Billing Usage REST API to retrieve resource usage data for a subscription. The app first fetches an access token using credentials of the signed-in user, then calls the Usage API and gets usage data for the requested time range, deserializes it into a payload object (which has a list of the usage aggregates), then prints it to the console.   
 
-Please note, the Usage APIs were in Preview at the time of this writing. Please refer to MSDN article [Azure Billing REST API Reference (Preview)] (https://msdn.microsoft.com/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c) for details on the Billing RateCard API.
+Please note, the Usage APIs were in Preview at the time of this writing. Please refer to MSDN article [Azure Billing REST API Reference (Preview)] (https://msdn.microsoft.com/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c) for details on the Billing Usage API.
 
 ## How To Run This Sample
 
@@ -28,7 +28,7 @@ To configure a new AAD application:
 1. Log in to the [Azure Management Portal](http://manage.windowsazure.com), using credentials that have been granted service co-administrator access a the subscription which is trusting your AAD tenant, and granted Global Administrator access in the AAD tenant.
 2. Select the AAD tenant you wish to use, and go to the "Applications" page.
 3. From there, you can use the "Add" feature to "Add a new application my organization is developing".
-4. Provide a name (ie: ConsoleApp-Billing-RateCard or similar) for the new application.
+4. Provide a name (ie: ConsoleApp-Billing-Usage or similar) for the new application.
 5. Be sure to select the "Native Client Application" type, then specify a valid URL for "Redirect URI" (which can be http://localhost/ for the purposes of this sample), and click the check mark to save.
 6. After you've added the new application, select it again within the list of applications and click "Configure" so you can make sure the sample app will have permissions to access the Windows Azure Service Management APIs, which is the permission used to secure the Billing APIs.  
 7. Scroll down to the to the "Permissions to other applications" section of your newly created application's configuration page.  Then click the "Add Application" button, select the "Windows Azure Service Management" row, and click the check mark to save.  After saving, hover the "Delegated Permissions" area on the right side of the "Windows Azure Service Management" row, click the "Delegated Permissions" drop down list, select the "Access Azure Service Management (preview)" option, and click "Save" again.
@@ -44,14 +44,14 @@ From your shell (ie: Git Bash, etc.) or command line, run the following command 
     git clone https://github.com/Azure/BillingCodeSamples.git
 
 ### Step 3:  Edit and Build the sample in Visual Studio
-After you've configured your tenant and downloaded the sample app, you will need to go into the local sub directory in which the Visual Studio solution is stored (typically in <your-git-root-directory>\BillingCodeSamples), and open the ConsoleApp-Billing-RateCard.sln Visual Studio solution.  Upon opening, navigate to the app.config file and update the following key/value pairs, using your subscription and AAD specific configuration information from earlier.  NOTE: It's very important that all values match your configuration!
+After you've configured your tenant and downloaded the sample app, you will need to go into the local sub directory in which the Visual Studio solution is stored (typically in <your-git-root-directory>\BillingCodeSamples), and open the ConsoleApp-Billing-Usage.sln Visual Studio solution.  Upon opening, navigate to the app.config file and update the following key/value pairs, using your subscription and AAD specific configuration information from earlier.  NOTE: It's very important that all values match your configuration!
 
 	<add key="ADALRedirectURL" value="https://localhost/"/>
 	<add key="TenantDomain" value="ENTER.AZURE.AD.DNS.NAME"/>                           
 	<add key="SubscriptionID" value="00000000-0000-0000-0000-000000000000"/>
 	<add key="ClientId" value="00000000-0000-0000-0000-000000000000"/>
 
-When you build the solution, it will also restore the missing Nuget packages which contain libraries upon which the sample depends.  Program.cs contains the RateCard query string, so if you would like to query for different data, you can also change the OfferDurableId, Currency, Locale, and/or RegionInfo parameter values.
+When you build the solution, it will also restore the missing Nuget packages which contain libraries upon which the sample depends.  Program.cs contains the Usage query string, so if you would like to query for a different time range, you can change the reportedStartTime and reportedEndTime parameter values.
 
 ### Step 4:  Run the application against your AAD tenant
 
