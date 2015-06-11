@@ -6,7 +6,7 @@ To learn more about the Billing Usage and RateCard APIs, visit [Gain insights in
 
 ## Sample Index
 -	[ConsoleApp-Billing-Usage](./ConsoleApp-Billing-Usage) - This sample will help you get started with using the Usage API.
--	[ConsoleApp-Billing-RateCard](./onsoleApp-Billing-RateCard) - This sample help you get started with using the RateCard API.
+-	[ConsoleApp-Billing-RateCard](./ConsoleApp-Billing-RateCard) - This sample help you get started with using the RateCard API.
 
 ## Get started
 
@@ -25,7 +25,7 @@ Be sure to check out XXXXXX if you are having trouble. The Azure Billing product
 
 If you would like to become an active contributor to this project please follow the instructions provided in [Microsoft Azure Projects Contribution Guidelines](http://azure.github.com/guidelines.html).
 
-If you encounter any bugs with the library please file an issue in the [Issues](https://github.com/Azure/BillingCodeSamples/issues) section of the project.
+If you encounter any bugs with the library please file an issue in the [Issues](https://github.com/Azure/BillingCodeSamples/issues) section of the repository.
 
 ## Learn More
 * [Azure Billing REST API Reference ](https://sandboxmsdnstage.redmond.corp.microsoft.com/en-us/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c)
