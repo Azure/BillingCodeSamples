@@ -29,4 +29,4 @@ If you would like to become an active contributor to this project please follow 
 If you encounter any bugs with the library please file an issue in the [Issues](https://github.com/Azure/BillingCodeSamples/issues) section of the repository.
 
 ## Learn More
-* [Azure Billing REST API Reference ](https://sandboxmsdnstage.redmond.corp.microsoft.com/en-us/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c)
+* [Azure Billing REST API Reference ](https://msdn.microsoft.com/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c)
