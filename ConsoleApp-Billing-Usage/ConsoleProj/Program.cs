@@ -15,6 +15,8 @@ using System.Configuration;
 
 namespace ARMAPI_Test
 {
+#error Please update the appSettings section in app.config, then remove this statement
+
     class Program
     {
        //This is a sample console application that shows you how to grab a token from AAD for the current user of the app, and then get usage data for the customer with that token.
@@ -48,8 +50,9 @@ namespace ARMAPI_Test
             try
             {
                 // Call the REST endpoint
+                Console.WriteLine("Calling Usage service...");
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-                Console.WriteLine(response.StatusDescription);
+                Console.WriteLine(String.Format("Usage service response status: {0}", response.StatusDescription));
                 Stream receiveStream = response.GetResponseStream();
 
                 // Pipes the stream to a higher level stream reader with the required encoding format. 
@@ -85,7 +88,7 @@ namespace ARMAPI_Test
             //Ask the logged in user to authenticate, so that this client app can get a token on his behalf
             var result = authenticationContext.AcquireToken(String.Format("{0}/", ConfigurationManager.AppSettings["ARMBillingServiceURL"]),
                                                             ConfigurationManager.AppSettings["ClientID"],
-                                                            new Uri("https://localhost/"));
+                                                            new Uri(ConfigurationManager.AppSettings["ADALRedirectURL"]));
 
             if (result == null)
             {
