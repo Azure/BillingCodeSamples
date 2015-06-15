@@ -20,7 +20,7 @@ Before you attempt to run the samples, please be sure to follow the instructions
 
 ## Need Help?
 
-Be sure to check out XXXXXX if you are having trouble. The Azure Billing product team actively monitors the forum and will be more than happy to assist you.
+Be sure to check out the Azure forums on [StackOverflow](http://stackoverflow.com/questions/tagged/azure) and [MSDN](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazurepurchasing) if you are having trouble. The Azure Billing product team actively monitors the forums and will be more than happy to assist you.
 
 ## Contribute Code or Provide Feedback
 
