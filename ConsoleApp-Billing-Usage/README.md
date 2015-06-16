@@ -25,7 +25,7 @@ Before you can run the sample application, you will need to allow it to access y
 
 To configure a new AAD application:
 
-1. Log in to the [Azure Management Portal](http://manage.windowsazure.com), using credentials that have been granted service co-administrator access a the subscription which is trusting your AAD tenant, and granted Global Administrator access in the AAD tenant.
+1. Log in to the [Azure Management Portal](http://manage.windowsazure.com), using credentials that have been granted service co-administrator access on the subscription which is trusting your AAD tenant, and granted Global Administrator access in the AAD tenant.
 2. Select the AAD tenant you wish to use, and go to the "Applications" page.
 3. From there, you can use the "Add" feature to "Add a new application my organization is developing".
 4. Provide a name (ie: ConsoleApp-Billing-Usage or similar) for the new application.
