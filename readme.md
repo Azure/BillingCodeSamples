@@ -17,7 +17,7 @@ Before you attempt to run the samples, please be sure to follow the instructions
 
 -	[ConsoleApp-Billing-Usage](./ConsoleApp-Billing-Usage) - This sample will help you get started with using the Usage API.
 -	[ConsoleApp-Billing-RateCard](./ConsoleApp-Billing-RateCard) - This sample help you get started with using the RateCard API.
--	[WebApp-Billing-MultiTenant](./WebApp-Billing-MultiTenant) - This MultiTenant sample creates a WebApp that allows the logged-in user to give it consent, to call the Azure Graph API and the Usage API on the user's behalf. It also shows the OAuth flows required to get consent for the ‘Reader’ role, for the list of Microsoft Azure subscriptions that the user wants to allow access to. 
+-	[WebApp-Billing-MultiTenant](./WebApp-Billing-MultiTenant) - This MultiTenant sample creates a WebApp that allows the logged-in user to give it consent, to call the Azure Graph API and the Usage API on the user's behalf. It also shows the OAuth flows required to get consent for the ‘Reader’ role, to access the list of Microsoft Azure subscriptions that the user wants to allow access to. 
 
 ## Need Help?
 
