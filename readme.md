@@ -2,7 +2,7 @@
 
 The Microsoft Azure Billing APIs enable integration of Azure Billing information into your applications, providing new insights into your consumption of Azure resources, allowing you to accurately predict and manage your Azure resource consumption costs. 
 
-To learn more about the Billing Usage and RateCard APIs, visit [Gain insights into your Microsoft Azure resource consumption](https://azure.microsoft.com/documentation/articles/billing-usage-rate-card-overview/).
+To learn more about the Billing Usage and RateCard APIs, visit the overview article [Gain insights into your Microsoft Azure resource consumption](https://azure.microsoft.com/documentation/articles/billing-usage-rate-card-overview/).  Visit the [Azure Billing REST API Reference](https://msdn.microsoft.com/en-us/library/azure/mt218998.aspx) article for more details on each of the APIs.
 
 ## Get started
 
@@ -17,10 +17,13 @@ Before you attempt to run the samples, please be sure to follow the instructions
 
 -	[ConsoleApp-Billing-Usage](./ConsoleApp-Billing-Usage) - This sample will help you get started with using the Usage API.
 -	[ConsoleApp-Billing-RateCard](./ConsoleApp-Billing-RateCard) - This sample help you get started with using the RateCard API.
+-	[WebApp-Billing-MultiTenant](./WebApp-Billing-MultiTenant) - This MultiTenant sample creates a WebApp that allows the logged-in user to give it consent, to call the Azure Graph API and the Usage API on the user's behalf. It also shows the OAuth flows required to get consent for the ‘Reader’ role, for the list of Microsoft Azure subscriptions that the user wants to allow access to. 
 
 ## Need Help?
 
 Be sure to check out the Azure forums on [StackOverflow](http://stackoverflow.com/questions/tagged/azure) and [MSDN](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazurepurchasing) if you are having trouble. The Azure Billing product team actively monitors the forums and will be more than happy to assist you.
+
+If you would like to provide feedback on the Billing APIs or ideas on how we can improve them, please visit the [Azure Feedback Forums](http://feedback.azure.com/forums/170030-billing).
 
 ## Contribute Code or Provide Feedback
 
