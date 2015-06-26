@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ARMAPI_Test
+﻿namespace ARMAPI_Test
 {
+    using System.Collections.Generic;
+
     public class UsagePayload
     {
         public List<UsageAggregate> value { get; set; }
+
+        public string nextLink { get; set; }
     }
 }
