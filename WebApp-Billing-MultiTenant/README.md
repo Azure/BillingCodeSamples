@@ -46,7 +46,7 @@ To configure a new AAD application:
 	- Click the check mark to save.
 
 7. After you've added the new application, select it again within the list of applications and click "Configure" so you can make the following additional changes:
-	- Under "Application is multi-tenant", select "Yes"
+	- Under "Application is multi-tenant", select "Yes".  Again, this setting indicates that your app can authenticate, and will require consent from, users from multiple AAD tenants.
 	- Under "Keys", click the "Select Duration" dropdown list and pick an appropriate value.
 	
 		**NOTE**: This key is used as a password for authentication in conjunction with the Client ID GUID, and is not immediately visible.  As the comment indicates, it will become visible after you save all configuration changes later (below), at which point YOU MUST SAVE A COPY, as it will no longer be available for viewing in the Management Portal UI.
