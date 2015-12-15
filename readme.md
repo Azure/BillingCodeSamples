@@ -1,6 +1,6 @@
 # Microsoft Azure Billing API Code Samples
 
-The Microsoft Azure Billing have moved to the new [Azure Code Sample](https://azure.microsoft.com/en-us/documentation/samples/) repositories. You can also navigate directly to the 3 new repositories:
+The Microsoft Azure Billing API Code Sample repositories have moved to the new [Azure Code Sample](https://azure.microsoft.com/en-us/documentation/samples/) repositories. You can also navigate directly to the 3 new repositories:
 
 -	[billing-dotnet-usage-api](https://github.com/Azure-Samples/billing-dotnet-usage-api) - This sample will help you get started with the Usage API.
 -	[billing-dotnet-ratecard-api](https://github.com/Azure-Samples/billing-dotnet-ratecard-api/) - This sample help you get started with the RateCard API.
